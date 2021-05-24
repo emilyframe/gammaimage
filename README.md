@@ -17,10 +17,10 @@
   - Note: this script reads in data from `gammaimage/efficiency.h5` and `gammaimage/farfieldmap.h5`. You will need to download `farfieldmap.h5` from: https://drive.google.com/file/d/11rHENsmg_fgdNAQ7WcaBRLhSCUq6bqV2/view?usp=sharing and store this file in `gammaimage/`
 
 - `mlem.py`
-  - Performs MLEM image reconstruction using the system response data in `gammaimage/sysresp/sysmat<pose #>.h5` and the detector data in `gammaimage/sysresp/data/phantom<pose #>.h5`.
-  - This script allows for tomographic image reconstruction, i.e. combining system responses and detector data files at multiple projection angles (detector poses). Currently, only one detector pose (at 0 degrees) is provided.
+  - Performs MLEM image reconstruction using the system response data in `gammaimage/sysresp/sysmatrix<pose #>.h5` and the detector data in `gammaimage/sysresp/data/phantom<pose #>.h5`.
+  - This script allows for tomographic image reconstruction, i.e. combining system response matrices and detector data at multiple detector poses. Currently, only one detector pose (at 0 degrees) is provided.
     - Note: be sure to match system response matrix with corresponding detector data
-  - The final reconstructed data is saved to `gammaimage/images/image.h5`.
+  - The reconstructed data is saved to `gammaimage/images/image.h5`.
 
 - `showimage.py`
   - Converts the image data in `gammaimage/images/image.h5` to a 3D volume and animates 2D slices of this volume over various depths (perpendicular to the imager).
