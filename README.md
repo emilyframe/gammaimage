@@ -26,6 +26,7 @@
   - Converts the image data in `gammaimage/images/image.h5` to a 3D volume and animates 2D slices of this volume over various depths (perpendicular to the imager).
 
 # Instructions for Running the Scripts
+1. In the `gammaimage` directory, run the command `mkdir sysresp` and `mkdir images`.
 1. Build system response matrix: `python scripts/sysresponse.py`.
   - Note: change data pathway at top of `gammaimage/scripts/sysresponse.py` to the location at which you stored this repo.
   - Note: it takes roughly 3 minutes to build one system response.
