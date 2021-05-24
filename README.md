@@ -11,7 +11,7 @@
 
 # Scripts ('gammaimage/scripts')
 - `sysresponse.py`
-  - Builds the system response and saves the system response to `gammaimage/sysresp/sysmat<pose #>.h5`
+  - Builds the system response and saves the system response to `gammaimage/sysresp/sysmatrix<pose #>.h5`
   - The system response is stored as a 2D matrix of i x j elements, where i is the number source voxels in the image space and j is the number of detector pixels. The size is currently set to 125000 x 5776.
   - The system response matrix can be produced at various projection angles (i.e. detector poses) for tomographic image reconstruction. If multiple detector poses are given in the `poses` array, a system response matrix will be saved to a separate file for each pose and named accordingly. Currently, only one detector pose (at 0 degrees) is provided.
   - Note: this script reads in data from `gammaimage/efficiency.h5` and `gammaimage/farfieldmap.h5`. You will need to download `farfieldmap.h5` from: https://drive.google.com/file/d/11rHENsmg_fgdNAQ7WcaBRLhSCUq6bqV2/view?usp=sharing and store this file in `gammaimage/`
