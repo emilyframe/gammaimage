@@ -27,11 +27,11 @@
 
 # Instructions for Running the Scripts
 1. Build system response matrix: `python scripts/sysresponse.py`.
-  - Note: change data pathway at top of `gammaimage/scripts/sysresponse.py` to the appropriate pathway.
+  - Note: change data pathway at top of `gammaimage/scripts/sysresponse.py` to the location at which you stored this repo.
   - Note: it takes roughly 3 minutes to build one system response.
 2. Perform MLEM image reconstruction: `python scripts/mlem.py`
-  - Note: change data pathway at top of `gammaimage/scripts/mlem.py` to the appropriate pathway.
+  - Note: change data pathway at top of `gammaimage/scripts/mlem.py` to the location at which you stored this repo.
   - Note: you can adjust the number of iterations by changing the nIter variable. Currently, set to 100.
   - Note: it takes roughly 7 minutes to perform 100 iterations.
 3. Plot reconstructed data: `python scripts/showimage.py`
-  - Note: change data pathway at top of `gammaimage/scripts/showimage.py` to the appropriate pathway.
+  - Note: change data pathway at top of `gammaimage/scripts/showimage.py` to the location at which you stored this repo.
