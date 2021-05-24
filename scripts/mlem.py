@@ -1,5 +1,5 @@
 # Data Pathway
-path = '/home/raptor/repos/'
+path = '/Users/eframe/'
 
 # Libraries
 import numpy as np
